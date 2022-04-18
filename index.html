@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stoper</title>
+    <link rel="stylesheet" href="https://unpkg.com/@tabler/icons@latest/iconfont/tabler-icons.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <p class="info">
+            <i class="ti ti-question-mark"></i>
+        </p>
+        <h1 class="main-heading">Stopwatch</h1>
+        <p class="stopwatch">0:00</p>
+        <p class="time">0:00</p>
+        <div class="buttons">
+            <button class="play btn"><i class="ti ti-player-play"></i></button>
+            <button class="pause btn"><i class="ti ti-player-pause"></i></button>
+            <button class="stop btn"><i class="ti ti-player-stop"></i></button>
+            <button class="clear btn">Clear all</button>
+            <button class="archive btn">Archive</button>
+        </div>
+        <ul class="time-list">
+        </ul>
+    </div>
+
+    <div class="modal-shadow">
+        <div class="modal">
+            <h3 class="modal-heading">Instruction</h3>
+            <p class="modal-item"><i class="ti ti-player-play"></i> - start</p>
+            <p class="modal-item"><i class="ti ti-player-pause"></i> - pause</p>
+            <p class="modal-item"><i class="ti ti-player-stop"></i> - stop</p>
+            <p class="modal-item"><strong>Clear archive</strong> - deletes all measurements</p>
+            <p class="modal-item"><strong>Archive</strong> - displays the measurement archive</p>
+
+            <button class="modal-close btn">Close</button>
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
